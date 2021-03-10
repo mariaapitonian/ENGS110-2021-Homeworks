@@ -19,13 +19,9 @@ def isPrime(num):
     print("Your number is prime.")
 
 def Binary(decimal):
-    #binary = [0]*8
-    #for i in range(0,7):
-    #    binary[(7-i)] = decimal%2
-    #    decimal = int(decimal/2)
     binary = []
     while(decimal>0):
-        binary.append([(decimal%2)])
+        binary.append((decimal%2))
         decimal = int(decimal/2)
     
     n = len(binary)
